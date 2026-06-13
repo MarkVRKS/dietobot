@@ -1,0 +1,71 @@
+{
+  "activity_levels": {
+    "sedentary": {
+      "name": "Малоподвижный",
+      "description": "Сидячая работа, минимальная активность",
+      "multiplier": 1.2
+    },
+    "light": {
+      "name": "Лёгкая активность",
+      "description": "Лёгкие тренировки 1-3 раза в неделю",
+      "multiplier": 1.375
+    },
+    "moderate": {
+      "name": "Умеренная активность",
+      "description": "Тренировки 3-5 раз в неделю",
+      "multiplier": 1.55
+    },
+    "active": {
+      "name": "Высокая активность",
+      "description": "Интенсивные тренировки 6-7 раз в неделю",
+      "multiplier": 1.725
+    },
+    "very_active": {
+      "name": "Очень высокая",
+      "description": "Профессиональный спорт, тяжёлый физический труд",
+      "multiplier": 1.9
+    }
+  },
+  "diet_types": {
+    "balanced": {
+      "name": "Сбалансированное",
+      "protein_pct": 30,
+      "fat_pct": 30,
+      "carbs_pct": 40
+    },
+    "high_protein": {
+      "name": "Высокобелковое",
+      "protein_pct": 40,
+      "fat_pct": 25,
+      "carbs_pct": 35
+    },
+    "low_carb": {
+      "name": "Низкоуглеводное",
+      "protein_pct": 35,
+      "fat_pct": 40,
+      "carbs_pct": 25
+    },
+    "keto": {
+      "name": "Кетогенное",
+      "protein_pct": 25,
+      "fat_pct": 65,
+      "carbs_pct": 10
+    },
+    "vegetarian": {
+      "name": "Вегетарианское",
+      "protein_pct": 25,
+      "fat_pct": 25,
+      "carbs_pct": 50
+    }
+  },
+  "genders": {
+    "male": "Мужской",
+    "female": "Женский"
+  },
+  "meal_types": {
+    "breakfast": "Завтрак",
+    "lunch": "Обед",
+    "dinner": "Ужин",
+    "snack": "Перекус"
+  }
+}
