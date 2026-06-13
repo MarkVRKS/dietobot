@@ -74,10 +74,16 @@ def reminder_keyboard(reminders: list) -> InlineKeyboardMarkup:
     for r in reminders:
         status = "✅" if r["is_enabled"] else "❌"
         name = types.get(r["reminder_type"], r["reminder_type"])
-        buttons.append([InlineKeyboardButton(
-            text=f"{status} {name} — {r['hour']:02d}:{r['minute']:02d}",
-            callback_data=f"toggle_reminder_{r['reminder_type']}"
-        )])
+        buttons.append([
+            InlineKeyboardButton(
+                text=f"{status} {name} — {r['hour']:02d}:{r['minute']:02d}",
+                callback_data=f"toggle_reminder_{r['reminder_type']}"
+            ),
+            InlineKeyboardButton(
+                text="⏰",
+                callback_data=f"settime_reminder_{r['reminder_type']}"
+            )
+        ])
     return InlineKeyboardMarkup(inline_keyboard=buttons)
 
 
